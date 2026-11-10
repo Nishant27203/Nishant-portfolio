@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-brand-bg: #090D0B;
+  --color-brand-surface: #101713;
+  --color-brand-card: #151D18;
+  --color-brand-card-hover: #1a251f;
+  --color-brand-lime: #B7F23B;
+  --color-brand-lime-muted: #8DBD35;
+  --color-brand-text: #F4F6F2;
+  --color-brand-muted: #9BA69E;
+  --color-brand-border: rgba(255, 255, 255, 0.09);
+  --color-brand-border-active: rgba(183, 242, 59, 0.35);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background-color: #090D0B;
+    color: #F4F6F2;
+  }
+
+  body {
+    background-color: #090D0B;
+    color: #F4F6F2;
+    overflow-x: hidden;
+  }
+}
+
+/* Subtle enterprise grid background */
+.bg-enterprise-grid {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(183, 242, 59, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Soft ambient green glow effects */
+.ambient-glow-top {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(183, 242, 59, 0.08) 0%, rgba(141, 189, 53, 0.03) 40%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090D0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a251f;
+  border-radius: 4px;
+  border: 2px solid #090D0B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #25382b;
+}
