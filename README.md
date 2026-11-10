@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="./assets/nishant-profile-banner.png" alt="Nishant Kumar — Technology and IT Operations" width="100%" />
-</div>
-
 # Hi, I'm Nishant Kumar 👋
 
 I'm an MCA graduate interested in **IT Support, Application Support, and IT Operations**. I enjoy understanding how systems work, troubleshooting technical issues, and building practical tools that make support workflows easier.
