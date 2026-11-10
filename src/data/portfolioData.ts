@@ -79,7 +79,7 @@ export const PORTFOLIO_DATA = {
     leetcodeUsername: "nishantkumar272",
     location: "Punjab / Uttar Pradesh, India",
     statusBadge: "Available for Application Support & IT Ops roles",
-    heroImage: "/src/assets/images/hero_abstract_tech_sphere_1794293607906.jpg",
+    heroImage: "/images/nishant-kumar-profile.jpg",
   },
 
   about: {

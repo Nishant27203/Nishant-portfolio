@@ -178,9 +178,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#090D0B]">
                   <img
                     src={PORTFOLIO_DATA.profile.heroImage}
-                    alt="Abstract 3D enterprise technology sphere with glowing green orbital rings"
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    alt="Nishant Kumar professional profile portrait"
+                    loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
+                    onError={(event) => {
+                      // Fall back to the bundled abstract visual if the profile photo is unavailable.
+                      event.currentTarget.onerror = null;
+                      event.currentTarget.src = "/images/hero-abstract-tech-sphere.jpg";
+                    }}
+                    className="w-full h-full object-cover object-[center_28%] transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#101713] via-transparent to-transparent opacity-90" />
                   
